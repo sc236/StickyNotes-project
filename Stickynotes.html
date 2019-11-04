@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<body>
+  <header>
+    <h1>Stick Notes</h1>
+  </header>
+  <div id="stick-notes-dom"></div>
+
+  <form action="#" onsubmit="addStickyNote();return false">
+    <input type="text" name="text" id="text-input" placeholder="enter something here">
+    <input type="submit" value="+" >
+  </form>
+
+
+  <script>
+    function addStickyNote(){
+      document.getElementById('stick-notes-dom').insertAdjacentHTML('beforeend',
+      <div class="sticky-note">${document.getElementById('text-input').value}</div>);
+      document.getElementById('text-input').value = "";
+    }
+  </script>
+</body>
+</html>

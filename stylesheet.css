@@ -1,0 +1,10 @@
+.sticky-note{
+    width: 100px;
+    background-color: rgb(252, 215, 94);
+    padding: 10px;
+    margin: 10px;
+    text-overflow: clip;
+  }
+
+body{
+    background-color: rgb(252, 215, 94);
